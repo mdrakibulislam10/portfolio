@@ -3,7 +3,7 @@ import ActiveLink from "../../ActiveLink/ActiveLink";
 const Navbar = () => {
 
     const menuRoute = <>
-        <h2 className="px-3 py-2 text-3xl md:text-5xl font-mono text-sky-500 font-bold" aria-current="page" style={{ fontFamily: "cursive" }}>Rakibul</h2>
+        <h2 className="px-3 py-2 text-2xl md:text-4xl font-mono text-sky-500 font-bold" aria-current="page" style={{ fontFamily: "cursive" }}>Rakibul</h2>
 
         <ActiveLink to={"/"}>Home</ActiveLink>
         <ActiveLink to={"/resume"}>Resume</ActiveLink>
