@@ -1,8 +1,9 @@
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import aboutPic from "../../assets/clgtjtw67001img08w4qemmv3_1.jpg"
 
+// TODO: backend
 const myData = [
-    { _id: 0, dataKey: "Birthday", dataValue: "22 Oct 2001" },
+    { _id: 0, dataKey: "Birth Date", dataValue: "October 22, 2001" },
     { _id: 2, dataKey: "Address", dataValue: "Manikganj, Bangladesh" },
     { _id: 3, dataKey: "E-mail", dataValue: "mdrakibulislam752@gmail.com" },
     { _id: 4, dataKey: "Phone", dataValue: "01762486620" },
@@ -10,7 +11,8 @@ const myData = [
 
 const AboutMe = () => {
     return (
-        <section id="about-me">
+        <section id="about">
+            {/* TODO: fixed hash - avoid sectionTitle */}
             <SectionTitle
                 title={"About"}
                 colorTitle={"Me"}
@@ -34,7 +36,7 @@ const AboutMe = () => {
                             myData.map(data =>
                                 <div key={data._id} className="text-left border p-3 rounded-md">
                                     <h3 className="text-xs font-medium text-gray-500">{data.dataKey}</h3>
-                                    <p className="text-sm md:text-lg font-bold text-black">{data.dataValue}</p>
+                                    <p className="text-sm md:text-lg font-semibold text-black">{data.dataValue}</p>
                                 </div>
                             )
                         }

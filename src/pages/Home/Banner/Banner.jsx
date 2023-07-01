@@ -57,7 +57,7 @@ const Banner = () => {
             </div>
 
             <div className="">
-                <a href="#about-me">
+                <a href="#about">
                     <img className="w-10 mx-auto bg-gray-900 rounded-full cursor-pointer" src={bottomArrow} alt="" />
                 </a>
             </div>

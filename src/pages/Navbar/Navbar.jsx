@@ -1,16 +1,50 @@
 import { useState } from "react";
-import ActiveLink from "../../ActiveLink/ActiveLink";
+// import ActiveLink from "../../ActiveLink/ActiveLink";
+// import { NavHashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
-
     const [isMenuHidden, setHiddenMenu] = useState(false);
+    const [activeRoute, setActiveRoute] = useState("home");
+
+    const activeStyle = "text-sm p-1 md:text-lg font-medium text-orange-600 cursor-pointer";
+    const normalStyle = "rounded-md p-1 text-sm md:text-lg font-medium cursor-pointer";
 
     const menuRoute = <>
-        <ActiveLink to={"/"}>Home</ActiveLink>
-        <ActiveLink to={"/"}>About</ActiveLink>
-        <ActiveLink to={"/"}>Skills</ActiveLink>
-        <ActiveLink to={"/"}>Projects</ActiveLink>
-        <ActiveLink to={"/"}>Contact</ActiveLink>
+        <a onClick={() =>
+            setActiveRoute("home")}
+            className={activeRoute === "home" ? activeStyle : normalStyle}
+            href="#"
+        >
+            Home
+        </a>
+        <a onClick={() =>
+            setActiveRoute("about")}
+            className={activeRoute === "about" ? activeStyle : normalStyle}
+            href={activeRoute !== "home" ? "#about" : undefined}
+        >
+            About
+        </a>
+        <a onClick={() =>
+            setActiveRoute("skills")}
+            className={activeRoute === "skills" ? activeStyle : normalStyle}
+            href={activeRoute !== "home" ? "#skills" : undefined}
+        >
+            Skills
+        </a>
+        <a onClick={() =>
+            setActiveRoute("projects")}
+            className={activeRoute === "projects" ? activeStyle : normalStyle}
+            href={activeRoute !== "home" ? "#projects" : undefined}
+        >
+            Projects
+        </a>
+        <a onClick={() =>
+            setActiveRoute("contact")}
+            className={activeRoute === "contact" ? activeStyle : normalStyle}
+            href={activeRoute !== "home" ? "#contact" : undefined}
+        >
+            Contact
+        </a>
     </>
 
     const myName = <>
@@ -18,8 +52,8 @@ const Navbar = () => {
     </>
 
     return (
-        <section className="my-4">
-            <nav className="">
+        <section className="my-4 sticky top-0 z-50">
+            <nav className="bg-white shadow-lg">
                 <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                     <div className="relative flex h-16 items-center justify-between">
                         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
