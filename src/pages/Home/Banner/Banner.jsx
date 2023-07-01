@@ -6,7 +6,7 @@ import { FaFacebook, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSqu
 
 const Banner = () => {
     return (
-        <section className="mb-20 mt-6 bg-gray-100 py-12">
+        <section className="mb-20 mt-6 bg-gray-100 py-12" id="home">
             <div className="flex flex-col lg:flex-row justify-center items-center mx-1 lg:mx-20 gap-5 mb-10">
                 <div className="lg:w-1/2 mx-auto">
                     <div className="flex flex-col h-full justify-center">
