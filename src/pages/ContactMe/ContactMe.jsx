@@ -31,7 +31,7 @@ const ContactMe = () => {
 
 
     return (
-        <section className="mx-1 md:mx-12 lg:mx-20">
+        <section className="mx-1 md:mx-12 lg:mx-20" id="contact">
             <SectionTitle
                 title={"Contact"}
                 colorTitle={"Me"}
