@@ -51,10 +51,10 @@ const ContactMe = () => {
                     </form>
                 </div>
 
-                <div className="text-2xl order-1 lg:mt-6 lg:ms-6">
-                    <p className="flex gap-1 items-center"><FaMailBulk /> mdrakibulislam752@gmail.com</p>
-                    <p className="flex gap-1 items-center my-6"><FaPhoneAlt /> +88 01762486620</p>
-                    <p className="flex gap-1 items-center"><FaRegAddressBook /> Manikganj, Bangladesh</p>
+                <div className="text-xl order-1 lg:mt-6 lg:ms-6">
+                    <p className="flex flex-wrap gap-1 items-center"><FaMailBulk /> mdrakibulislam752@gmail.com</p>
+                    <p className="flex flex-wrap gap-1 items-center my-6"><FaPhoneAlt /> +88 01762486620</p>
+                    <p className="flex flex-wrap gap-1 items-center"><FaRegAddressBook /> Manikganj, Bangladesh</p>
                 </div>
             </div>
         </section>
