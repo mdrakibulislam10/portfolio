@@ -8,7 +8,7 @@ const myData = [
     { _id: 0, dataKey: "Birth Date", dataValue: "October 22, 2001" },
     { _id: 2, dataKey: "Address", dataValue: "Manikganj, Bangladesh" },
     { _id: 3, dataKey: "E-mail", dataValue: "mdrakibulislam752@gmail.com" },
-    { _id: 4, dataKey: "Phone / WhatsApp / Telegram", dataValue: "01762486620" },
+    { _id: 4, dataKey: "Phone / WhatsApp / Telegram", dataValue: "+88 01762486620" },
 ];
 
 const AboutMe = () => {
