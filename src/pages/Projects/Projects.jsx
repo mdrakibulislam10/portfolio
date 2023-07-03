@@ -19,7 +19,10 @@ const projectImages = [
             "Clicking on Dashboard will take you to the Student Dashboard page if you're a student, the Instructor Dashboard page if you're an instructor, and the Admin Dashboard page if you're an administrator.",
             "You can select any class in the classes page and confirm purchase the class by payment in the my enrolled page.",
             "You can toggle light mode and dark mode.",
-        ]
+        ],
+        liveSiteLink: "https://summer-camp-client-side-d54ce.web.app/",
+        clientSideRepo: "https://github.com/mdrakibulislam10/summer-camp-client-side",
+        serverSideRepo: "https://github.com/mdrakibulislam10/summer-camp-server-side",
     },
     {
         _id: 1,
@@ -36,7 +39,10 @@ const projectImages = [
             "You can see our blogs by going to the blog site.",
             "You can login with email and password or google login by going to login page.",
             "You can create an account with your email and password by going to the sign up page.",
-        ]
+        ],
+        liveSiteLink: "https://toy-marketplace-702fe.web.app/",
+        clientSideRepo: "https://github.com/mdrakibulislam10/toy-marketplace-client-side",
+        serverSideRepo: "https://github.com/mdrakibulislam10/toy-marketplace-server-side",
     },
     {
         _id: 2,
@@ -51,7 +57,10 @@ const projectImages = [
             "You can sign-up, sign-in and log-out on this website.",
             "If you go to the blog page, you can see the blog.",
             "Click Download PDF button on the blog page, the blog page is download in pdf format.",
-        ]
+        ],
+        liveSiteLink: "https://chef-recipe-hunter-clien-c7937.web.app/home",
+        clientSideRepo: "https://github.com/mdrakibulislam10/chef-recipe-hunter-client-side",
+        serverSideRepo: "https://github.com/mdrakibulislam10/chef-recipe-hunter-server-side",
     },
 ];
 
@@ -108,7 +117,9 @@ const Projects = () => {
             {selectedProject && (
                 <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                     <form method="dialog" className="modal-box">
-                        <h3 className="font-bold text-3xl">{selectedProject.projectNm}</h3>
+                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-gray-300 text-xl">✕</button>
+
+                        <h3 className="font-bold text-3xl mt-3">{selectedProject.projectNm}</h3>
                         <div>
                             <h3 className="py-2 mt-5 text-2xl">Features</h3>
                             {selectedProject.features.map((feature, id) => (
@@ -117,10 +128,14 @@ const Projects = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className="modal-action">
-                            {/* if there is a button in form, it will close the modal */}
-                            <button className="btn">Close</button>
+                        <div className="mt-5 flex gap-2 flex-wrap">
+                            <a href={selectedProject.liveSiteLink} target="_blank" rel="noreferrer" className="btn btn-sm">Live Website</a>
+                            <a href={selectedProject.clientSideRepo} target="_blank" rel="noreferrer" className="btn btn-sm">Client Side</a>
+                            <a href={selectedProject.serverSideRepo} target="_blank" rel="noreferrer" className="btn btn-sm">Server Side</a>
                         </div>
+                        {/* <div className="modal-action">
+                            <button className="btn">Close</button>
+                        </div> */}
                     </form>
                 </dialog>
             )}
