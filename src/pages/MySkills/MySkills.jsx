@@ -62,7 +62,7 @@ const MySkills = () => {
             <div className="text-end my-5">
                 {
                     logoImages.length <= 9 &&
-                    <button onClick={() => setLogoImages(skillsLogoImages)} className="text-orange-600 text-lg lg:absolute end-12 bottom-5">See More &rarr;</button>
+                    <button onClick={() => setLogoImages(skillsLogoImages)} className="btn btn-sm lg:absolute end-12 bottom-5 bg-orange-600 border-orange-600 hover:bg-orange-700 text-white font-bold">See More &rarr;</button>
                 }
             </div>
         </section>

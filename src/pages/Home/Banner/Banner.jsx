@@ -32,13 +32,9 @@ const Banner = () => {
                         />
 
                         <div className="mt-5">
-                            <button className="me-2">
-                                btn1
-                            </button>
+                            <a href="#projects" className="btn bg-orange-600 text-white hover:bg-orange-700 me-2">My Projects</a>
 
-                            <button>
-                                btn2
-                            </button>
+                            <a href="https://drive.google.com/file/d/15TqzYngP4mbsnp7t2fUVne-B4Uef-VjZ/view?usp=sharing" target="_blank" rel="noreferrer" className="btn bg-orange-600 text-white hover:bg-orange-700">View Resume</a>
                         </div>
                     </div>
                 </div>

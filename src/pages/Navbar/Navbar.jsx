@@ -47,6 +47,8 @@ const Navbar = () => {
         </h2>
     );
 
+    // TODO: kaje na lagle remove kore dibo useEffect er code;
+
     // useEffect(() => {
     //     Events.scrollEvent.register("begin", function () {
     //         // Scroll event begins

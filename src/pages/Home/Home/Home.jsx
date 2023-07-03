@@ -1,5 +1,6 @@
 import AboutMe from "../../AboutMe/AboutMe";
 import MySkills from "../../MySkills/MySkills";
+import Projects from "../../Projects/Projects";
 import Banner from "../Banner/Banner";
 
 const Home = () => {
@@ -10,6 +11,8 @@ const Home = () => {
             <AboutMe />
 
             <MySkills />
+
+            <Projects />
         </div>
     );
 };
