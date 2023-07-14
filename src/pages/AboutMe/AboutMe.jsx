@@ -1,6 +1,6 @@
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import aboutPic from "../../assets/clgtjtw67001img08w4qemmv3_1.jpg"
-import resume from "../../assets/resume/mdrakibulislam-resume.pdf";
+import resume from "../../assets/resume/md-rakibul-islam-resume-front-end.pdf";
 import { FaDownload } from 'react-icons/fa';
 
 // TODO: backend

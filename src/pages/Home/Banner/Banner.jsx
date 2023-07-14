@@ -1,5 +1,5 @@
 // import bannerImg from "../../../assets/qlq3d339wrt.jpeg-removebg-preview.png";
-import bannerImg from "../../../assets/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg";
+import bannerImg from "../../../assets/bannerImg.png"
 import bottomArrow from "../../../assets/Arrows_down_animated.gif";
 import { TypeAnimation } from 'react-type-animation';
 import { FaFacebook, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
@@ -17,7 +17,9 @@ const Banner = () => {
                             sequence={[
                                 "Web Developer",
                                 1000,
-                                "Front-End Developer",
+                                "React.js Developer",
+                                1000,
+                                "Front End Developer",
                                 1000,
                                 "MERN Stack Developer",
                                 1000,
@@ -34,7 +36,7 @@ const Banner = () => {
                         <div className="mt-5">
                             <a href="#projects" className="btn bg-orange-600 text-white hover:bg-orange-700 me-2">My Projects</a>
 
-                            <a href="https://drive.google.com/file/d/15TqzYngP4mbsnp7t2fUVne-B4Uef-VjZ/view?usp=sharing" target="_blank" rel="noreferrer" className="btn bg-orange-600 text-white hover:bg-orange-700">View Resume</a>
+                            <a href="https://drive.google.com/file/d/1t0ivKmC-opeTtcx6qmcyQHI91IwL2jDQ/view?usp=sharing" target="_blank" rel="noreferrer" className="btn bg-orange-600 text-white hover:bg-orange-700">View Resume</a>
                         </div>
                     </div>
                 </div>
@@ -43,7 +45,7 @@ const Banner = () => {
                     <img className="mx-auto" src={bannerImg} alt="" />
 
                     <div className="flex md:flex-col flex-wrap gap-8 justify-center md:justify-start my-5 md:my-1">
-                        <a href="https://www.linkedin.com/in/md-rakibul-islam-32b794214/" target="_blank" rel="noreferrer" title="Linkedin"><FaLinkedin className="w-8 h-8" /></a>
+                        <a href="https://www.linkedin.com/in/md-rakibul-islam-a7a668283/" target="_blank" rel="noreferrer" title="Linkedin"><FaLinkedin className="w-8 h-8" /></a>
                         <a href="https://github.com/mdrakibulislam10" target="_blank" rel="noreferrer" title="GitHub"><FaGithubSquare className="w-8 h-8" /></a>
                         <a href="https://www.instagram.com/____rokib____/?hl=en" target="_blank" rel="noreferrer" title="Instagram"><FaInstagramSquare className="w-8 h-8" /></a>
                         <a href="https://twitter.com/Rokib74664686" target="_blank" rel="noreferrer" title="Twitter"><FaTwitterSquare className="w-8 h-8" /></a>
