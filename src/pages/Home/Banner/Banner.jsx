@@ -36,7 +36,7 @@ const Banner = () => {
                         <div className="mt-5">
                             <a href="#projects" className="btn bg-orange-600 text-white hover:bg-orange-700 me-2">My Projects</a>
 
-                            <a href="https://drive.google.com/file/d/1t0ivKmC-opeTtcx6qmcyQHI91IwL2jDQ/view?usp=sharing" target="_blank" rel="noreferrer" className="btn bg-orange-600 text-white hover:bg-orange-700">View Resume</a>
+                            <a href="https://drive.google.com/file/d/1CnsWptyOT8pmeu1Jor06olU-IeD_L1CV/view?usp=sharing" target="_blank" rel="noreferrer" className="btn bg-orange-600 text-white hover:bg-orange-700">View Resume</a>
                         </div>
                     </div>
                 </div>
