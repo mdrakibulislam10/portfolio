@@ -1,5 +1,5 @@
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
-import aboutPic from "../../assets/clgtjtw67001img08w4qemmv3_1.jpg"
+import aboutPic from "../../assets/myImgAbout.png";
 import resume from "../../assets/resume/md-rakibul-islam-resume-react.pdf";
 import { FaDownload } from 'react-icons/fa';
 
@@ -17,15 +17,15 @@ const AboutMe = () => {
             <SectionTitle
                 title={"About"}
                 colorTitle={"Me"}
-                subTitle={"Know about me"}
+            // subTitle={"Know about me"}
             />
 
             <div className="grid grid-cols-1 lg:grid-cols-2 mx-1 lg:mx-20 gap-3">
                 <div>
-                    <img src={aboutPic} className="mx-auto" alt="" />
+                    <img src={aboutPic} className="mx-auto w-3/4 rounded-3xl" alt="" />
                 </div>
 
-                <div>
+                <div className="mt-10">
                     <div className="text-justify">
                         <p className="text-2xl font-semibold mb-1">I'm Md. Rakibul Islam</p>
                         I’m from Manikganj, Bangladesh. I completed the MERN stack web development course from Programming Hero. Where I gained knowledge for building modern web applications. I have the skills to create responsive, dynamic and interactive web applications using React.js, Node.js, Express.js and MongoDB.
@@ -42,7 +42,7 @@ const AboutMe = () => {
                         }
                     </div>
 
-                    <a href={resume} download className="btn bg-orange-600 text-white hover:bg-orange-700">Download Resume
+                    <a href={resume} download className="btn bg-orange-600 text-white mt-5 hover:bg-orange-700">Download Resume
                         <FaDownload /></a>
                 </div>
             </div>
