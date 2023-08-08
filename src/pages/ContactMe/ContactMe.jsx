@@ -35,11 +35,14 @@ const ContactMe = () => {
             <SectionTitle
                 title={"Contact"}
                 colorTitle={"Me"}
-                subTitle={"Contact with me"}
+            // subTitle={"Contact with me"}
             />
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
-                <div className="order-2 lg:order-1">
+                <div className="order-2 lg:order-1 overflow-x-hidden"
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                >
                     <form ref={form} onSubmit={sendEmail} className="flex flex-col">
                         <label className="text font-semibold">Name</label>
                         <input required type="text" name="user_name" className="border border-orange-600 rounded mb-3 p-1 py-1" />
@@ -51,7 +54,7 @@ const ContactMe = () => {
                     </form>
                 </div>
 
-                <div className="text-xl order-1 lg:mt-6 lg:ms-6">
+                <div className="text-xl md:text-3xl order-1 lg:mt-6 lg:ms-6">
                     <p className="flex flex-wrap gap-1 items-center"><FaMailBulk /> mdrakibulislam752@gmail.com</p>
                     <p className="flex flex-wrap gap-1 items-center my-6"><FaPhoneAlt /> +88 01762486620</p>
                     <p className="flex flex-wrap gap-1 items-center"><FaRegAddressBook /> Manikganj, Bangladesh</p>

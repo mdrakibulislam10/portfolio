@@ -42,7 +42,10 @@ const Banner = () => {
                 <div className="lg:w-1/2 mx-1 md:flex gap-5 order-1 md:order-2">
                     <img className="mx-auto w-3/4" src={bannerImg} alt="" />
 
-                    <div className="flex md:flex-col flex-wrap gap-8 justify-center md:justify-start my-5 md:my-1">
+                    <div className="flex md:flex-col flex-wrap gap-8 justify-center md:justify-start my-5 md:my-1"
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                    >
                         <a href="https://www.linkedin.com/in/md-rakibul-islam-dev/" className="md:mt-20" target="_blank" rel="noreferrer" title="Linkedin"><FaLinkedin className="w-8 h-8" /></a>
                         <a href="https://github.com/mdrakibulislam10" target="_blank" rel="noreferrer" title="GitHub"><FaGithubSquare className="w-8 h-8" /></a>
                         <a href="https://www.instagram.com/____rokib____/?hl=en" target="_blank" rel="noreferrer" title="Instagram"><FaInstagramSquare className="w-8 h-8" /></a>

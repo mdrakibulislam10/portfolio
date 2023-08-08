@@ -25,16 +25,19 @@ const AboutMe = () => {
                     <img src={aboutPic} className="mx-auto w-3/4 rounded-3xl" alt="" />
                 </div>
 
-                <div className="mt-10">
+                <div className="xl:mt-8 overflow-x-hidden"
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                >
                     <div className="text-justify">
                         <p className="text-2xl font-semibold mb-1">I'm Md. Rakibul Islam</p>
                         I’m from Manikganj, Bangladesh. I completed the MERN stack web development course from Programming Hero. Where I gained knowledge for building modern web applications. I have the skills to create responsive, dynamic and interactive web applications using React.js, Node.js, Express.js and MongoDB.
                     </div>
 
-                    <div className="mb-6 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3">
+                    <div className="mb-6 mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3">
                         {
                             myData.map(info =>
-                                <div key={info._id} className="text-left border p-1 rounded-md">
+                                <div key={info._id} className="border p-1 rounded-md text-center lg:text-left">
                                     <h3 className="text-xs font-medium text-gray-500">{info.dataKey}</h3>
                                     <p className="text-sm md:text-lg font-semibold text-black">{info.dataValue}</p>
                                 </div>
@@ -42,8 +45,11 @@ const AboutMe = () => {
                         }
                     </div>
 
-                    <a href={resume} download className="btn bg-orange-600 text-white mt-5 hover:bg-orange-700">Download Resume
-                        <FaDownload /></a>
+                    <div className="text-center lg:text-start">
+                        <a href={resume} download className="btn bg-orange-600 text-white mt-5 hover:bg-orange-700">Download Resume
+                            <FaDownload />
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

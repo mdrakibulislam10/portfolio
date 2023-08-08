@@ -45,13 +45,16 @@ const MySkills = () => {
             <SectionTitle
                 title={"My"}
                 colorTitle={"Skills"}
-                subTitle={"Know about my skills"}
+            // subTitle={"Know about my skills"}
             />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-y-12">
                 {
                     logoImages.map((logo, id) =>
-                        <div key={id} className="mx-auto text-center border-2 p-5 rounded-sm">
+                        <div key={id} className="mx-auto text-center border-2 p-5 rounded-sm overflow-x-hidden"
+                            data-aos="zoom-in-up"
+                            data-aos-duration="2000"
+                        >
                             <img src={logo.logoImg} className="w-36 h-36 mb-3 rounded-xl" alt="" />
                             <h2 className="text-xl font-semibold">{logo.logoName}</h2>
                         </div>
@@ -59,7 +62,7 @@ const MySkills = () => {
                 }
             </div>
 
-            <div className="text-end my-5">
+            <div className="text-center md:text-end my-5">
                 {
                     logoImages.length <= 9 &&
                     <button onClick={() => setLogoImages(skillsLogoImages)} className="btn btn-sm lg:absolute end-12 bottom-5 bg-orange-600 border-orange-600 hover:bg-orange-700 text-white font-bold">See More &rarr;</button>

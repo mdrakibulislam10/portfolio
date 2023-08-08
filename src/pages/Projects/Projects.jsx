@@ -85,12 +85,15 @@ const Projects = () => {
             <SectionTitle
                 title={"My"}
                 colorTitle={"Projects"}
-                subTitle={"See my projects"}
+            // subTitle={"See my projects"}
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-1 md:mx-12 lg:mx-20 gap-3">
                 {projectImages.map((project) => (
-                    <div key={project._id}>
+                    <div key={project._id} className="overflow-x-hidden"
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                    >
                         <div
                             className="h-64 bg-cover bg-top hover:bg-bottom transition-all ease-in-out duration-1000 rounded-md"
                             style={{ backgroundImage: `url(${project.projectImg})` }}
