@@ -21,6 +21,8 @@ const Banner = () => {
                                 1000,
                                 "Front-End Developer",
                                 1000,
+                                "Node.js Developer",
+                                1000,
                                 () => {
                                     // console.log('Sequence completed');
                                 },

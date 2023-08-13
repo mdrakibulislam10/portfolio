@@ -30,7 +30,7 @@ const AboutMe = () => {
                     data-aos-duration="2000"
                 >
                     <div className="text-justify">
-                        <p className="text-2xl font-semibold mb-1">I'm Md. Rakibul Islam</p>
+                        <p className="text-2xl font-semibold mb-1">Hi, I'm Md. Rakibul Islam</p>
                         I’m from Manikganj, Bangladesh. I completed the MERN stack web development course from Programming Hero. Where I gained knowledge for building modern web applications. I have the skills to create responsive, dynamic and interactive web applications using React.js, Node.js, Express.js and MongoDB.
                     </div>
 
